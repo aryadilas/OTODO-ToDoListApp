@@ -55,7 +55,7 @@
 		</div>
 
 		<!-- Main Content -->
-		<main class="flex-grow pb-10 max-w-xl mx-auto">
+		<main class="w-full flex-grow pb-10 max-w-xl mx-auto">
 				
 			<livewire:create-panel></livewire:create-panel>
 		
