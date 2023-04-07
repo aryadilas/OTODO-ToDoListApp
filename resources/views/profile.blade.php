@@ -19,7 +19,7 @@
     	<!-- Navbar -->
     	<div class="border-b flex justify-center">
 
-            <div class="max-w-xl w-full flex justify-between px-4 py-3">
+            <div class="relative max-w-xl w-full flex justify-between px-4 py-3">
 
                 <img src="{{ asset('/assets/images/otodo-landscape.svg') }}" alt="">
 
@@ -36,24 +36,26 @@
                     
                 </div>
 
+                <!-- Menu Container -->
+                <div id="menu" class="hidden absolute right-0 top-[60px] bg-white border">
+                    
+                    <a class="hover:bg-[#EEEDFF] px-2 py-1 flex gap-2 items-center" href="/">
+                        <img class="w-4 h-4" src="{{ asset('assets/boxicons/bx-home.svg') }}" alt="">
+                        <p> Home </p>
+                    </a>
+
+                    <a class="hover:bg-[#EEEDFF] px-2 py-1 flex gap-2 items-center" href="/logout">
+                        <img class="w-4 h-4" src="{{ asset('assets/boxicons/bx-log-out.svg') }}" alt="">
+                        <p> Logout </p>
+                    </a>
+                    
+                </div>
+
             </div>
 
     	</div>
 
-        <!-- Menu Container -->
-		<div id="menu" class="hidden absolute right-4 top-[60px] bg-white border">
-			
-			<a class="hover:bg-[#EEEDFF] px-2 py-1 flex gap-2 items-center" href="/">
-				<img class="w-4 h-4" src="{{ asset('assets/boxicons/bx-edit.svg') }}" alt="">
-				<p> Home </p>
-			</a>
-
-			<a class="hover:bg-[#EEEDFF] px-2 py-1 flex gap-2 items-center" href="/logout">
-				<img class="w-4 h-4" src="{{ asset('assets/boxicons/bx-log-out.svg') }}" alt="">
-				<p> Logout </p>
-			</a>
-			
-		</div>
+        
         
         <!-- Main Content -->
         <main class="flex-grow">
